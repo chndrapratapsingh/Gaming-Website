@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+    font-weight: 300;
+}
+
+header{
+    /*background: linear-gradient( #aac9dc 0%, #cbe2ef 100%);*/
+    background: linear-gradient( #aac9dc 57%, #cbe2ef -4%);
+    /* box-shadow:3px 3px 8px -3px #00000066; */
+    box-shadow: 0px 7px 9px 0px #0000003d;
+    height: 7.3vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    cursor: context-menu;
+}
+
+header img{
+    height: 4rem;
+    border-radius: 21%;
+}
+
+header h2{
+    font-size: 2rem;
+    color: white;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+header ul li a{
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 1.2rem;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+}
+
+#front{
+    height: 87.8vh;
+}
+
+.game{
+    background: #dadada6b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin: 2rem;
+    box-shadow: 3px 3px 8px -3px #00000066;
+    border-radius: 10px;
+}
+
+.game p{
+    font-size: 0rem;
+}
+
+.temp1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.temp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* align-items: center; */
+}
+
+.temp img{
+    height: 4rem;
+    margin-right: 1rem;
+}
+
+.temp h2{
+    color: black;
+}
+
+#buttons button{
+    margin-right: 1rem;
+}
+
+.game button{
+    background: white;
+    border: none;
+    height: 2rem;
+    width: 6rem;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 3px 3px 8px -3px #00000066;
+}
+
+.game button a{
+    color: black;
+    text-decoration: none;
+}
+
+.game button:active {
+    box-shadow: inset 3px 3px 8px -3px #00000066;
+}
+
+canvas {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    text-align: center;
+}
+
+.hero{
+    text-align: center;
+    margin-top: 15%;
+    font-size: 4rem;
+    color: yellowgreen;
+    text-shadow: 2px 2px 2px #e4e4e4;
+}
+
+#main1{
+    height: 79.3vh;
+    background: black;
+}
+
+footer{
+    background-image: linear-gradient( #aac9dc 0%, #cbe2ef 100%);
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoicon{
+    height: 2rem;
+}
+
+#aboutheading{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+}
+
+#main1 h1{
+    text-shadow: 5px 8px grey;
+}
+
+#aboutperagraph{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    font-weight: 300;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+#button12:hover + .game{
+    height: 20vh;
+    background: red;
+}
+
+.game123{
+    background: #dadada6b;
+    display: flex;
+    height: 40vh;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 2rem;
+    box-shadow: 3px 3px 8px -3px #00000066;
+    border-radius: 10px;
+}
+
+.game123 p{
+    font-size: 1rem;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.game123 button{
+    background: white;
+    border: none;
+    height: 2rem;
+    width: 6rem;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 3px 3px 8px -3px #00000066;
+}
+
+.game123 button a{
+    color: black;
+    text-decoration: none;
+}
+
+.game123 button:active {
+    box-shadow: inset 3px 3px 8px -3px #00000066;
+}
+
+#cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card{
+    height: 37vh;
+    width: 20vw;
+    background: white;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.card h3{
+    font-weight: 500;
+}
+
+.card p{
+   font-weight: 400; 
+}
+
+.card a{
+    color: blue;
+    text-decoration: none;
+}
+
+#card3{
+    writing-mode: vertical-lr;
+    font-weight: 100;
+    font-family: system-ui;
+    color: #0000002e;
+}
+
+.card button{
+    background: white;
+    /* border: none; */
+    padding: 1rem;
+}
+
+#likeings{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#aaaaa h2{
+    cursor: pointer;
+}
+
+/* 2 1 0.7 */
+
+@media only screen and (max-width: 642px)
+{
+    header img{
+        height: 2rem;
+    }
+
+    header h2{
+        font-size: 1rem;
+    }
+
+    header ul li a{
+        font-size: 0.7rem;
+    }
+
+    #buttons button{
+        width: 5rem;
+        margin-bottom: 8px;
+    }
+
+    .temp h2{
+        font-size: 21px;
+        margin-right: 20px;
+    }
+
+    #cards{
+        flex-direction: column;
+    }
+
+    #main1{
+        height: 148vh;
+    }
+
+    .card{
+        height: 26vh;
+        width: 86vw;
+        margin-top: 2rem;
+    }
+}
+
+/*328 min-width*/
